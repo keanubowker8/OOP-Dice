@@ -15,7 +15,8 @@ die20 = new Die(20)
 die20.roll()
 
 print(die6.value) // this would print a number between 1 and 6 inclusive
-print(die20.value) // this would print a number between 1 and 20 inclusive ```
+print(die20.value) // this would print a number between 1 and 20 inclusive 
+```
 
 # Weighted Dice
 Please extend your program with the following functionality.
@@ -48,7 +49,8 @@ die6 = Die(6,[1,1,1,1,1,1])
 
  #this is equivalent to
 
-die6 = Die(6) ```
+die6 = Die(6)
+```
 
 If there are any negative numbers in the probabilities array then raise the error negative probabilities not allowed.
 If the sum of the numbers in the probabilities array is less than 1 then raise the error probability sum must be greater than 0
@@ -69,7 +71,8 @@ eg:
 
 factory20 = DiceFactory(20)
 die20 = factory20.make_ie()
-anotherDie20 = factory20.make_die() ```
+anotherDie20 = factory20.make_die() 
+```
 This is a very somplified verion of the factory design pattern. Design patterns are cool you guys. Basically the idea behind this one is that some classes are hard to construct:
 
 sometimes it’s hard to decide what to construct
