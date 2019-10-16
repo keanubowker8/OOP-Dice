@@ -51,3 +51,19 @@ die6.roll()
 
 print(die6.value) # this would print a number between 1 and 6 inclusive
 #print(die20.value) # this would print a number between 1 and 20 inclusive       
+
+class DiceFactory():
+    value = 0
+    
+    def __init__(self,sides):
+        self.sides = sides
+        
+        
+    def make_die(self):
+         self.value = random.randrange(1, self.sides+1)
+         print(self.value)
+         return self.value
+
+
+factory20 = DiceFactory(20)
+a = factory20.make_die()         
