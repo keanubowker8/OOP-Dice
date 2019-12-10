@@ -14,7 +14,6 @@ class Die():
         if self.probabilities==None:
             self.probabilities = [1 for i in range(self.sides)]    
         if type(self.probabilities) == list:
-            assert len(self.probabilities) == self.sides
             for number in self.probabilities:
                 if number < 0:
                     raise ValueError('negative probabilities not allowed')
